@@ -120,6 +120,10 @@ strong {
     .Collapsible__contentInner p:last-child {
       margin-bottom: 0; }
 
+.debit-style-trigger {
+    background: #01e3cf !important;
+}
+
 .Collapsible__trigger {
   display: block;
   font-weight: 400;

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d91c43d-5d62-40aa-9b01-91f60d23bb9b" name="Default Changelist" comment="" />
+    <list default="true" id="4d91c43d-5d62-40aa-9b01-91f60d23bb9b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../src/components/dashboard/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/dashboard/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/dashboard/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/dashboard/dashboard.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,8 +111,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/services/AccountingService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="49" column="68" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="68" />
+            <state relative-caret-position="214">
+              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -414,8 +417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/services/AccountingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="49" column="68" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="68" />
+        <state relative-caret-position="214">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

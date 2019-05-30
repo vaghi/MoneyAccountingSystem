@@ -16,10 +16,12 @@ class Dashboard extends PureComponent {
 			<div>
 				{
 					transactions.map(t => {
-						return <Collapsible trigger={`Type: ${t.type} - Amount: ${t.amount}`}>
-							<p>{`Id: ${t.id}`}</p>
-							<p>{`Effective Date: ${new Date(t.effectiveDate.seconds * 1000)}`}</p>
-						</Collapsible>
+						return <div key={t.id}>
+							<Collapsible triggerClassName={t.type === 'debit' ? 'debit-style-trigger' : ""} trigger={`Type: ${t.type} - Amount: ${t.amount}`}>
+								<p>{`Id: ${t.id}`}</p>
+								<p>{`Effective Date: ${new Date(t.effectiveDate.seconds * 1000)}`}</p>
+							</Collapsible>
+						</div>
 					})
 				}
 			</div>
