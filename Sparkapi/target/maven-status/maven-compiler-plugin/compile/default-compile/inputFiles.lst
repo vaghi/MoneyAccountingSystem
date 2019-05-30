@@ -1,8 +1,8 @@
-C:\Users\avaghi\Downloads\Sparkapi\src\main\java\entities\Transaction.java
-C:\Users\avaghi\Downloads\Sparkapi\src\main\java\dao\AccountingDao.java
-C:\Users\avaghi\Downloads\Sparkapi\src\main\java\entities\TransactionType.java
-C:\Users\avaghi\Downloads\Sparkapi\src\main\java\controllers\AccountingController.java
-C:\Users\avaghi\Downloads\Sparkapi\src\main\java\services\IAccountingService.java
-C:\Users\avaghi\Downloads\Sparkapi\src\main\java\dao\IAccountingDao.java
-C:\Users\avaghi\Downloads\Sparkapi\src\main\java\entities\TransactionException.java
-C:\Users\avaghi\Downloads\Sparkapi\src\main\java\services\AccountingService.java
+C:\Users\avaghi\Downloads\MoneyAccountingSystem\Sparkapi\src\main\java\dao\IAccountingDao.java
+C:\Users\avaghi\Downloads\MoneyAccountingSystem\Sparkapi\src\main\java\entities\TransactionException.java
+C:\Users\avaghi\Downloads\MoneyAccountingSystem\Sparkapi\src\main\java\services\AccountingService.java
+C:\Users\avaghi\Downloads\MoneyAccountingSystem\Sparkapi\src\main\java\services\IAccountingService.java
+C:\Users\avaghi\Downloads\MoneyAccountingSystem\Sparkapi\src\main\java\dao\AccountingDao.java
+C:\Users\avaghi\Downloads\MoneyAccountingSystem\Sparkapi\src\main\java\entities\TransactionType.java
+C:\Users\avaghi\Downloads\MoneyAccountingSystem\Sparkapi\src\main\java\controllers\AccountingController.java
+C:\Users\avaghi\Downloads\MoneyAccountingSystem\Sparkapi\src\main\java\entities\Transaction.java
