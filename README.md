@@ -1,4 +1,4 @@
-# Event Manager
+# Money Accounting System
 
 
 ## Run
@@ -7,36 +7,105 @@ For the frontend, run on the root folder:
 npm start
 ```
 
-For the simulated backend, I used json-server. To run it. install json-server globally
+For the backend, run over Sparkapi/target
 ```
-npm install -g json-server
-```
-and run on the root folder:
-```
-json-server --watch db.json
+java -jar Spark-api-1.0-SNAPSHOT.jar
 ```
 
-## Solution
+## Endpoints
 
-This is an event manager thinked and developed for a single user.
+* **Get all Transactions**\
+Fetches transactions history
+```
+Verb: GET
+URL: http://localhost:4567/
+```
 
-It allows you to see events, create new ones and subcribe and unsubcribe to them.
-The solution is fully responsive being able to be renderized in a mobile device.
+Response:
+```javascript
+[
+  {
+    "id": "string",
+    "type": "credit",
+    "amount": 0,
+    "effectiveDate": "2019-05-30T01:59:55.221Z"
+  }
+]
+```
 
-### On Create Event
-- All fields are mandatory, warning messages will be shown if a field was not populated
-- Date must be a future date (tomorrow or later)
-- No duplicated or character restrictions over the fields
-- Name has a max length of 20
-- Description has a max length of 60
-- Location has a max length of 30
+* **Create Transaction**\
+Commit new transaction to the account
+```
+Verb: POST
+URL: http://localhost:4567/
+```
+Body:
+```javascript
+{
+  "type": "credit",
+  "amount": 0
+}
+```
 
-### On Subscribe / Unsubscribe
-- Subscription its only a property over the event, tied to the current user, reflected on a checkbox
-- It does not trigger anything nor allows multiple users
+Response:
 
-## TODO
-- Fix uncontrolled/controlled error on console
-- Fix libraries vulnerabilities
-- Add unit tests
-- Add duplicated restriction for Name and Date combination
+```javascript
+{
+  "id": "string",
+  "type": "credit",
+  "amount": 0,
+  "effectiveDate": "2019-05-30T01:53:00.876Z"
+}
+```
+
+On invalid entry:
+
+```
+code: 400
+message: invalid input
+```
+
+On negative balance:
+
+```
+code: 400
+message: invalid transaction
+```
+
+
+* **Get Transaction by Id**\
+Find transaction by ID
+```
+Verb: GET
+URL: http://localhost:4567/{id}
+```
+
+Response:
+```javascript
+{
+  "id": "string",
+  "type": "credit",
+  "amount": 0,
+  "effectiveDate": "2019-05-30T01:57:51.160Z"
+}
+```
+
+On invalid ID format:
+
+```
+code: 400
+message: invalid ID supplied
+```
+
+On transaction not found:
+
+```
+code: 404
+message: transaction not found
+```
+
+## TODO / LEFT BEHIND:
+
+* Implement: * * invalid status value * * error on GetAll
+* Test * * concurrent access * * and implement if it doesn't work
+* UnitTests
